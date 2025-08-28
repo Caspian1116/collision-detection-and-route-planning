@@ -1,0 +1,227 @@
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_298410e4e543d23402b007b44d6d41de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+
+            &lt;style&gt;html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            &lt;/style&gt;
+
+            &lt;style&gt;#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            &lt;/style&gt;
+
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_298410e4e543d23402b007b44d6d41de&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_298410e4e543d23402b007b44d6d41de = L.map(
+                &quot;map_298410e4e543d23402b007b44d6d41de&quot;,
+                {
+                    center: [53.4667, -2.2333],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 12,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fbb0f9ab68d9ef08a155eb7d5e78fe93 = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_fbb0f9ab68d9ef08a155eb7d5e78fe93.addTo(map_298410e4e543d23402b007b44d6d41de);
+        
+    
+            var marker_9a4c19f9db850a05935ded48cae75862 = L.marker(
+                [53.4667, -2.2333],
+                {
+}
+            ).addTo(map_298410e4e543d23402b007b44d6d41de);
+        
+    
+            var icon_84fd4eb01eb823d5f296d5f94e80ed47 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_4aff25daf7017cbd2874fae5f6851369 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_af9b85525eb6e90012cdd690c83bd619 = $(`&lt;div id=&quot;html_af9b85525eb6e90012cdd690c83bd619&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;曼彻斯特大学 (事故点)&lt;/div&gt;`)[0];
+                popup_4aff25daf7017cbd2874fae5f6851369.setContent(html_af9b85525eb6e90012cdd690c83bd619);
+            
+        
+
+        marker_9a4c19f9db850a05935ded48cae75862.bindPopup(popup_4aff25daf7017cbd2874fae5f6851369)
+        ;
+
+        
+    
+    
+                marker_9a4c19f9db850a05935ded48cae75862.setIcon(icon_84fd4eb01eb823d5f296d5f94e80ed47);
+            
+    
+            var marker_e2ee91d47a9cc0c11ad2714fa6da791d = L.marker(
+                [53.4615685, -2.2079936],
+                {
+}
+            ).addTo(map_298410e4e543d23402b007b44d6d41de);
+        
+    
+            var icon_fc3755c5585dd39d344878a59c6a27cf = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_a9cef27293d8ad4272be23bdc99ac2f3 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_59db14aca7ce8dc03272025a8b7557d1 = $(`&lt;div id=&quot;html_59db14aca7ce8dc03272025a8b7557d1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;最优警察局: Longsight Police Station&lt;/div&gt;`)[0];
+                popup_a9cef27293d8ad4272be23bdc99ac2f3.setContent(html_59db14aca7ce8dc03272025a8b7557d1);
+            
+        
+
+        marker_e2ee91d47a9cc0c11ad2714fa6da791d.bindPopup(popup_a9cef27293d8ad4272be23bdc99ac2f3)
+        ;
+
+        
+    
+    
+                marker_e2ee91d47a9cc0c11ad2714fa6da791d.setIcon(icon_fc3755c5585dd39d344878a59c6a27cf);
+            
+    
+            var poly_line_73c9e37408a2a4579bbcf11c366b5bda = L.polyline(
+                [[53.4667086, -2.2333082], [53.4667329, -2.2332383], [53.4667611, -2.2331516], [53.4667317, -2.2331233], [53.4670402, -2.232153], [53.4672409, -2.2315235], [53.4672657, -2.2314456], [53.4668875, -2.2310777], [53.4668752, -2.2310654], [53.4665943, -2.2308129], [53.4663857, -2.2305337], [53.4659212, -2.2300461], [53.4658569, -2.2299822], [53.4658161, -2.2298982], [53.4662356, -2.2286152], [53.4662882, -2.2284544], [53.4655737, -2.2275522], [53.4655865, -2.2274], [53.4654058, -2.2268827], [53.4653105, -2.2265538], [53.4651953, -2.2262694], [53.4650349, -2.2256635], [53.4648998, -2.2251477], [53.4648514, -2.2249629], [53.4647192, -2.224485], [53.4645267, -2.2237337], [53.4643905, -2.22324], [53.4643501, -2.2230808], [53.4642652, -2.222765], [53.4640204, -2.22188], [53.4637989, -2.2210855], [53.4636701, -2.2206234], [53.4636339, -2.2204936], [53.4634389, -2.2197939], [53.463283, -2.2192543], [53.4632269, -2.2190651], [53.4627365, -2.2172869], [53.4624447, -2.2162288], [53.4624356, -2.2161968], [53.4624064, -2.2160925], [53.4622559, -2.2155548], [53.4621637, -2.2152255], [53.4620272, -2.2147216], [53.4620099, -2.214658], [53.4615747, -2.2131668], [53.4615036, -2.2129631], [53.4614401, -2.212775], [53.4613654, -2.2125532], [53.4610088, -2.2114962], [53.4609566, -2.2113414], [53.4607571, -2.2107499], [53.4607259, -2.2106574], [53.4607881, -2.2105567], [53.4607748, -2.2104724], [53.4610265, -2.2096918], [53.4615685, -2.2079936]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 2.5}
+            ).addTo(map_298410e4e543d23402b007b44d6d41de);
+        
+    
+            var marker_9521942f4ed660294818f3893f200c43 = L.marker(
+                [53.4615805, -2.2248392],
+                {
+}
+            ).addTo(map_298410e4e543d23402b007b44d6d41de);
+        
+    
+            var icon_20cf77ce8a00c1c9e96ff0e063259b0c = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_1a696a5c781d2242ba69e35439206ad0 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_0344f0bd29e8f65cf32205357590d528 = $(`&lt;div id=&quot;html_0344f0bd29e8f65cf32205357590d528&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;最优医院: Manchester Royal Infirmary&lt;/div&gt;`)[0];
+                popup_1a696a5c781d2242ba69e35439206ad0.setContent(html_0344f0bd29e8f65cf32205357590d528);
+            
+        
+
+        marker_9521942f4ed660294818f3893f200c43.bindPopup(popup_1a696a5c781d2242ba69e35439206ad0)
+        ;
+
+        
+    
+    
+                marker_9521942f4ed660294818f3893f200c43.setIcon(icon_20cf77ce8a00c1c9e96ff0e063259b0c);
+            
+    
+            var poly_line_7a291b7341346df19f66ee6b5f75f5c9 = L.polyline(
+                [[53.4667086, -2.2333082], [53.4667329, -2.2332383], [53.4667611, -2.2331516], [53.4667317, -2.2331233], [53.4665364, -2.2330443], [53.4665205, -2.2330964], [53.4665142, -2.2331152], [53.4660127, -2.2326369], [53.4659679, -2.232557], [53.4655643, -2.2326062], [53.465309, -2.2325769], [53.4651175, -2.232472], [53.4650972, -2.2324824], [53.4650691, -2.2323332], [53.4650339, -2.2323048], [53.4649875, -2.2322673], [53.4649516, -2.2322993], [53.4644285, -2.2316836], [53.4641693, -2.2313803], [53.4641385, -2.2313449], [53.464103, -2.2312967], [53.4640311, -2.2312207], [53.4630961, -2.230084], [53.4630452, -2.2300441], [53.4629989, -2.2299978], [53.4629655, -2.2299653], [53.4629019, -2.2299103], [53.4624322, -2.2293954], [53.4623693, -2.2293375], [53.4623246, -2.2292985], [53.4625122, -2.2286076], [53.4623806, -2.228379], [53.4624001, -2.2283333], [53.4620464, -2.2278763], [53.4618349, -2.2276039], [53.461259, -2.2268618], [53.4612748, -2.2267988], [53.4613096, -2.2266595], [53.4614103, -2.2262573], [53.4614639, -2.2260378], [53.4613238, -2.22583], [53.4613315, -2.2257801], [53.4615805, -2.2248392]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 2.5}
+            ).addTo(map_298410e4e543d23402b007b44d6d41de);
+        
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
